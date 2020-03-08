@@ -6,11 +6,11 @@
 # https://leetcode.com/problems/add-two-numbers/description/
 #
 # algorithms
-# Medium (32.13%)
-# Likes:    6311
-# Dislikes: 1643
-# Total Accepted:    1.1M
-# Total Submissions: 3.4M
+# Medium (32.72%)
+# Likes:    7008
+# Dislikes: 1812
+# Total Accepted:    1.2M
+# Total Submissions: 3.7M
 # Testcase Example:  '[2,4,3]\n[5,6,4]'
 #
 # You are given two non-empty linked lists representing two non-negative
@@ -53,4 +53,7 @@ class Solution:
             curr = curr.next
         return root.next
         
+# Time complexity : O(max(m, n))
+# Space complexity : O(max(m, n))
+
 # @lc code=end

@@ -6,11 +6,11 @@
 # https://leetcode.com/problems/two-sum/description/
 #
 # algorithms
-# Easy (44.72%)
-# Likes:    12362
-# Dislikes: 434
-# Total Accepted:    2.3M
-# Total Submissions: 5.1M
+# Easy (45.06%)
+# Likes:    13461
+# Dislikes: 492
+# Total Accepted:    2.6M
+# Total Submissions: 5.7M
 # Testcase Example:  '[2,7,11,15]\n9'
 #
 # Given an array of integers, return indices of the two numbers such that they
@@ -36,9 +36,11 @@ class Solution:
         seen = {}
         for i, v in enumerate(nums):
             comp = target - v
-            if comp not in seen:
-                seen[v] = i
-            else:
+            if comp in seen:
                 return [seen[comp], i]
+            seen[v] = i
         
+# Time complexity : O(n)
+# Space complexity : O(n)
+
 # @lc code=end
